@@ -1,0 +1,114 @@
+
+
+body {
+    background-color: rgb(36, 38, 43);
+}
+.container {
+    width: 1200px;
+}
+
+.table {
+    background-color: rgb(30, 32, 36);
+}
+
+body
+.image {
+    height: 400px;
+    background-image: url("/assets/images/2.png");
+    background-size: cover;
+    background-position-y: -130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btn-buy {
+    background-color: rgb(230, 154, 39);
+    width: 200px;
+}
+/* .btn {
+    background-color: rgb(230, 154, 39);
+    width: 200px;
+} */
+/* .btn-play {
+    background-color: rgb(255, 8, 0) !important;
+} */
+
+.time {
+    margin-bottom: -100px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card {
+    background-color: rgb(30, 32, 36);
+}
+
+.tabela {
+    background-color: rgb(30, 32, 36);
+}
+
+
+
+.lottery-numbers {
+    display: grid;
+    grid-template-columns: repeat(5, 0fr);
+    
+}
+  
+.lottery-numbers button {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 25px;
+    margin: 5px;
+    flex-basis: calc(100% / 10);
+    border-radius: 50%;
+}
+  
+.selected {
+    width: 33px;
+    height: 33px;
+    background-color: red !important;
+    color: rgb(2, 0, 0);
+}
+
+
+
+.selected-number {
+    background-color: #d4d0d0;
+    color: rgb(2, 0, 0);
+}
+  
+#lottery-card {
+    display: none;
+}
+
+.frm {
+    border-bottom: 1px white solid;
+}
+  
+
+button.special-numbers {
+    background-color: green;
+}
+
+button.lottery-numbers-special {
+    border-top: 1px solid black;
+}
+
+.modal-numbers {
+    border: 1px solid black;
+    padding: 5px;
+}

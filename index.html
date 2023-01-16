@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Lottery Project</title>
+</head>
+<body>
+  <div class="container">
+      <section class="image">
+          <div class="header">
+            <h1 class="generatedNumbers text-light bg-dark p-3">0</h1>
+            <button type="button" id="buy-ticket-button" class="btn btn-buy btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal">Buy a ticket
+            </button>
+            
+            <button type="button" id="playNow" class="btn btn-danger">Play Now!
+            </button>
+  
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Choose your numbers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div id="lottery-card" class="modal-body lottery-numbers p-3" style="display: block;"></div>
+                  <div class="modal-header">
+                    <p class="modal-numbers-text" id="exampleModalLabel">Your ticket</p> 
+                    <h5 class="modal-numbers" id="modalNumbers">Your ticket</h5> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" id="reset-button" class="btn btn-secondary">Reset</button>
+                    <button id="ticket-save" type="button" class="btn btn-primary">Buy Ticket</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div id="lottery-card" class="card mt-5" style="display: none">
+        <div id="slct-numbers" class="frm card-body text-light"> 6 digit optional
+        </div>
+      </div> -->
+
+      <div class="row">
+        <h2 class="text-light HTP mt-5 py-1">HOW TO PLAY</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">My Ticket</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">My Winnings</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Result</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade text-light show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <table class="table table-dark table-borderless">
+              <thead>
+                <tr>
+                  <th id="col" scope="col">#</th>
+                  <th id="col" scope="col">Ticket Numbers</th>
+                  <th id="col" scope="col">Tickets</th>
+                  <th id="col" scope="col">Prize</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!-- <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td> -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade text-light" id="profile" role="tabpanel" aria-labelledby="profile-tab">123</div>
+          <div class="tab-pane fade text-light" id="contact" role="tabpanel" aria-labelledby="contact-tab">321</div>
+        </div>
+
+
+          
+          
+        <div class="about row">
+          <h2 class="text-light HTP mt-5">COCO LOTTERY RULE</h2>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="card  margin-bottom-5" style="width: 18rem;">
+              <img src="/assets/images/1.webp" class="card-img-top p-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-light">Buy Tickets</h5>
+                <p class="card-text text-light">Buy ticket with $0.1, and choose numbers for ticket.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card  margin-bottom-5" style="width: 18rem;">
+              <img src="/assets/images/2.webp" class="card-img-top p-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-light">Buy Tickets</h5>
+                <p class="card-text text-light">Buy ticket with $0.1, and choose numbers for ticket.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card margin-bottom-5 " style="width: 18rem;">
+              <img src="/assets/images/3.webp" class="card-img-top p-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-light">Buy Tickets</h5>
+                <p class="card-text text-light">Buy ticket with $0.1, and choose numbers for ticket.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="row">
+            <h2 class="text-light HTP mt-5">LOTTERY RULE</h2>
+            <div class="tabela p-4" >
+                <table class="table table-dark table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Matches</th>
+                        <th scope="col">Numbers</th>
+                        <th scope="col">Prize</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <div class="mt-5">
+                    <h5 class="text-light">Lottery Instructions</h5>
+                    <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat officia ipsa quod rem ducimus. Sapiente suscipit exercitationem officia! Consequatur nam quas aut quidem quo corporis, reprehenderit amet nisi numquam.</p>
+                    <h5 class="text-light">Lottery Instructions</h5>
+                    <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat officia ipsa quod rem ducimus. Sapiente suscipit exercitationem officia! Consequatur nam quas aut quidem quo corporis, reprehenderit amet nisi numquam.</p>
+
+                </div>
+            </div>
+        </div>
+
+  </div>
+  <!-- <div id="lottery-numbers">
+    <div class="number text-light" id="number-1">1</div>
+    <div class="number text-light" id="number-2">2</div>
+    ...
+    <div class="number text-light" id="number-49">49</div>
+  </div> -->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- <script src="/assets/js/app.js"></script> -->
+  <script src="/assets/js/lotteryForm.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
